@@ -3,8 +3,11 @@ body {
   font-weight: 400;
   display: block;
 }
-.imageLogo {
+.logo {
   height: 100px;
+}
+.imageLogo {
+  height: 100%;
   width: 75px;
 }
 .container {
@@ -39,11 +42,8 @@ header nav {
 .Flower {
   width: 50%;
   height: 350px;
-  margin: 10px 25%;
+  margin: 10px auto;
   border: 5px solid green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .Flower img {
@@ -52,19 +52,30 @@ header nav {
   height: 100%;
   position: absolute;
 }
-.Flower p {
+.Flower > p {
   display: none;
+  position: absolute;
   font-family: "Montserrat", sans-serif;
+  top: 50%;
+  left: 0;
+  color: white;
+  background: 0, 0, 0, 0.8;
+  min-height: 160px;
+  margin-top: -80px;
+  align-items: center;
+  right: 0;
+  justify-content: center;
 }
 .Flower:hover p {
   transition-duration: 1s;
   text-align: center;
-  display: block;
+  display: flex;
 }
 .Flower:hover img {
   opacity: 25%;
   filter: blur(2px);
   -webkit-filter: blur(2px);
+  display: flex;
 }
 footer {
   background: #020509;
